@@ -3,6 +3,6 @@
   flex-direction: column;
   height: 100%;
 }
-.has-equal-height .card-footer {
-  margin-top: auto;
+.has-equal-height .card-content {
+  height: 100%;
 }

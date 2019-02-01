@@ -1,0 +1,61 @@
+RewriteEngine on
+
+# Old, apparently did not work.
+#RewriteCond \%{HTTP_HOST} ^(.+)\.berlincheap\.com$   [NC]
+#RewriteRule ^ https://berlincheap.com\%{REQUEST_URI}  [L,R=303]
+
+RewriteBase /
+
+# index.html
+RewriteRule ^index.html$                    / [L,R=301]
+
+# Outbound
+RewriteRule ^go/db-mitfahrer-app$           https://www.bahn.de/wmedia/view/mdb/media/intern/mitfahrer-app/db-mitfahrer/index.html [NE,L,R=307]
+RewriteRule ^go/besser-mitfahren$           https://www.bessermitfahren.de/ [NE,L,R=307]
+
+
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType application/x-javascript .js
+    AddType image/bmp .bmp
+    AddType image/gif .gif
+    AddType application/x-gzip .gz .gzip
+    AddType image/x-icon .ico
+    AddType image/jpeg .jpg .jpeg .jpe
+    AddType image/png .png
+    AddType application/x-font-ttf .ttf .ttc
+    AddType application/zip .zip
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css A31536000
+    ExpiresByType application/x-javascript A31536000
+    ExpiresByType application/javascript A31536000
+    ExpiresByType text/javascript A31536000
+    ExpiresByType text/x-js A31536000
+    ExpiresByType image/bmp A31536000
+    ExpiresByType image/gif A31536000
+    ExpiresByType application/x-gzip A31536000
+    ExpiresByType image/x-icon A31536000
+    ExpiresByType image/jpeg A31536000
+    ExpiresByType application/x-font-otf A31536000
+    ExpiresByType image/png A31536000
+    ExpiresByType application/x-font-ttf A31536000
+    ExpiresByType application/zip A31536000
+</IfModule>
+<IfModule mod_deflate.c>
+    <IfModule mod_headers.c>
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+        AddOutputFilterByType DEFLATE text/html text/css text/x-component application/x-javascript application/javascript text/javascript text/x-js text/plain image/x-icon image/png image/gif
+    <IfModule mod_mime.c>
+        # DEFLATE by extension
+        AddOutputFilter DEFLATE js css htm html xml png gif
+    </IfModule>
+</IfModule>
+<FilesMatch "\.(gif|ico|jpg|jpeg|png|GIF|ICO|JPG|JPEG|PNG|css|js|woff|CSS|JS|WOFF|ttf|TTF)$">
+    <IfModule mod_headers.c>
+         Header unset Set-Cookie
+         Header set Cache-Control "max-age=31536000, public"
+    </IfModule>
+</FilesMatch>
