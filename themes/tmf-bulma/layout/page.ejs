@@ -1,3 +1,16 @@
-<h2 class="title is-3"><%- page.title %></h2>
+<% if (page.title) { %>
 
-<%- page.content %>
+				<div class="container">
+		<div class="content">
+			<h2 class="title is-3"><%- page.title %></h2>
+
+			<%- page.content %>
+
+				</div>
+		</div>
+
+<% } else { %>
+
+		<%- page.content %>
+
+<% } %>

@@ -78,4 +78,10 @@ theme: tmf-bulma
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: rsync
+  host: 159.69.180.128
+  user: stc
+  root: /home/stc/tmf/public/
+
+include:
+  - .htaccess

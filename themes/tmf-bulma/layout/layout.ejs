@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>ticket-mitfahrer.de | Plattformen fürs gemeinsame Verreisen</title>
 		<meta name="description" content="Zusammen fahren, zusammen sparen: Mit anderen auf einem Gruppenticket ist die Reise oft billiger. Hier gibt's die Plattformen dazu.">
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-K2D5LZW');</script>
+		<!-- End Google Tag Manager -->		
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
 		<link rel="stylesheet" href="/css/style.css">
 	</head>
@@ -12,16 +21,14 @@
 		<section class="hero is-primary is-bold">
 			<div class="hero-body">
 				<div class="container">
-					<h1 class="title is-4">ticket-mitfahrer</h1> listet Plattformen fürs gemeinsame Verreisen.
+					<h1 class="title is-4"><a href="/">ticket-mitfahrer</a></h1> listet Plattformen fürs gemeinsame Verreisen.
 				</div>
 			</div>
 		</section>
 		<section class="section">
-			<div class="columns">
 
-			  <%- body %>
+			<%- body %>
 
-			</div>
 		</section>
 
 		<footer class="footer">
@@ -34,15 +41,10 @@
 			</div>
 		</footer>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-958648-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-958648-1');
-		</script>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2D5LZW"
+											height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
 	</body>
 </html>
