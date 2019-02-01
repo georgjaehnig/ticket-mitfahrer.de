@@ -1,6 +1,15 @@
 title: Impressum
 ---
 
+Georg Jähnig
+
+Baikalstr. 21
+10319 Berlin
+Deutschland
+
+Telefon: +49 30 21 46 91 38
+E-Mail: georg@jaehnig.org
+
 USt-IdNr.: DE307563252
 
 ### Verantwortlicher für journalistisch-redaktionelle gestaltete Inhalte:
