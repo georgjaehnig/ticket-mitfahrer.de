@@ -1,0 +1,8 @@
+.has-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.has-equal-height .card-footer {
+  margin-top: auto;
+}
