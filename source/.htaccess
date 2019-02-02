@@ -13,7 +13,7 @@ RewriteRule ^index.html$                    / [L,R=301]
 RewriteRule ^go/db-mitfahrer-app$           https://www.bahn.de/wmedia/view/mdb/media/intern/mitfahrer-app/db-mitfahrer/index.html [NE,L,R=307]
 RewriteRule ^go/besser-mitfahren$           https://www.bessermitfahren.de/ [NE,L,R=307]
 RewriteRule ^go/hitchhikers$                http://www.hitchhikers.de/ [NE,L,R=307]
-RewriteRule ^go/twitter$                    https://www.twitter.com/ [NE,L,R=307]
+RewriteRule ^go/twitter$                    https://twitter.com/search?q=%23mitfahrer&vertical=default&f=tweets [NE,L,R=307]
 
 
 <IfModule mod_mime.c>
