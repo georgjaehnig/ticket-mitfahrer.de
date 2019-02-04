@@ -1,14 +1,6 @@
 RewriteEngine on
 
-# Old, apparently did not work.
-#RewriteCond \%{HTTP_HOST} ^(.+)\.berlincheap\.com$   [NC]
-#RewriteRule ^ https://berlincheap.com\%{REQUEST_URI}  [L,R=303]
-
 RewriteBase /
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^.*$                            / [L,R=301]
 
 # index.html
 RewriteRule ^index.html$                    / [L,R=301]
@@ -19,6 +11,10 @@ RewriteRule ^go/besser-mitfahren$           https://www.bessermitfahren.de/ [NE,
 RewriteRule ^go/hitchhikers$                http://www.hitchhikers.de/ [NE,L,R=307]
 RewriteRule ^go/twitter$                    https://twitter.com/ [NE,L,R=307]
 
+# Not found
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$                            / [L,R=301]
 
 <IfModule mod_mime.c>
     AddType text/css .css
