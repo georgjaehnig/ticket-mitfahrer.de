@@ -9,6 +9,11 @@ RewriteRule ^go/besser-mitfahren$           https://www.bessermitfahren.de/ [NE,
 RewriteRule ^go/hitchhikers$                http://www.hitchhikers.de/ [NE,L,R=307]
 RewriteRule ^go/twitter$                    https://twitter.com/ [NE,L,R=307]
 
+RewriteRule ^go/wochenendticket$            https://www.bahn.de/p/view/angebot/regio/schoenes_wochenende_ticket.shtml [NE,L,R=307]
+RewriteRule ^go/qdl-ticket$                 https://www.bahn.de/p/view/angebot/regio/qdl.shtml [NE,L,R=307]
+RewriteRule ^go/laenderticket$              https://www.bahn.de/p/view/angebot/regio/laender_tickets.shtml [NE,L,R=307]
+
+
 # Not found
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
