@@ -1,7 +1,5 @@
 RewriteEngine on
 
-RewriteBase /
-
 # index.html
 RewriteRule ^index.html$                    / [L,R=301]
 
@@ -12,6 +10,7 @@ RewriteRule ^go/hitchhikers$                http://www.hitchhikers.de/ [NE,L,R=3
 RewriteRule ^go/twitter$                    https://twitter.com/ [NE,L,R=307]
 
 # Not found
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^.*$                            / [L,R=301]
