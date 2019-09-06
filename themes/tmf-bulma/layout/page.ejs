@@ -1,16 +1,11 @@
 <% if (page.title) { %>
 
-				<div class="container">
-		<div class="content">
-			<h2 class="title is-3"><%- page.title %></h2>
+<div class="container">
+  <div class="content">
+    <h2 class="title is-3"><%- page.title %></h2>
 
-			<%- page.content %>
+    <%- page.content %>
+  </div>
+</div>
 
-				</div>
-		</div>
-
-<% } else { %>
-
-		<%- page.content %>
-
-<% } %>
+<% } else { %> <%- page.content %> <% } %>
