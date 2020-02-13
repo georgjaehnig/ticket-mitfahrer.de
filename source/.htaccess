@@ -9,9 +9,9 @@ RewriteRule ^go/besser-mitfahren$           https://www.bessermitfahren.de/ [NE,
 RewriteRule ^go/hitchhikers$                http://www.hitchhikers.de/ [NE,L,R=307]
 RewriteRule ^go/twitter$                    https://twitter.com/ [NE,L,R=307]
 
-RewriteRule ^go/wochenendticket$            https://www.bahn.de/p/view/angebot/regio/schoenes_wochenende_ticket.shtml [NE,L,R=307]
-RewriteRule ^go/qdl-ticket$                 https://www.bahn.de/p/view/angebot/regio/qdl.shtml [NE,L,R=307]
-RewriteRule ^go/laenderticket$              https://www.bahn.de/p/view/angebot/regio/laender_tickets.shtml [NE,L,R=307]
+RewriteRule ^go/wochenendticket$            https://www.awin1.com/awclick.php?gid=372427&mid=14964&awinaffid=419289&linkid=2476071&clickref= [NE,L,R=307]
+RewriteRule ^go/qdl-ticket$                 https://www.awin1.com/awclick.php?gid=372427&mid=14964&awinaffid=419289&linkid=2476071&clickref= [NE,L,R=307]
+RewriteRule ^go/laenderticket$              https://www.awin1.com/awclick.php?gid=372427&mid=14964&awinaffid=419289&linkid=2476174&clickref= [NE,L,R=307]
 
 
 # Not found
